@@ -1,12 +1,13 @@
 import java.util.HashMap;
 import java.util.Map;
-public class Main {
+public class hashMaps {
                 public static void main(String[] args) {
                     Map<String, Integer> wordCountMap = new HashMap<>();
-                    String str = "The quick brown fox jumps over the lazy dog. The dog barks loudly.";
+                    String str = "The quick brown fox jumps over the lazy dog. The dog barks loudly";
                     String[] words = str.split(" ");
                     for (String word: words){
-                       Integer count = wordCountMap.get(wordCountMap); 
+                        word = word.toLowerCase();
+                       Integer count = wordCountMap.get(word); 
                     if (count == null){
                         wordCountMap.put(word,1);
                     }
